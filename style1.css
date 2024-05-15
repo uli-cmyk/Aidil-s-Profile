@@ -1,0 +1,323 @@
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 450px;
+    height: 350px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 1px;
+    width: 15px;
+    height: 20px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+:root {
+    --gray-color: #D9D9D9;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.gagang {
+    position: absolute;
+    background-size: 1px;
+    top: 406px;
+    right: 609px;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.gagang:hover {
+    box-shadow: 0 0 50px 40px #dbe048;
+}
+
+.tombol {
+    position: absolute;
+    background-size: 1px;
+    top: 50px;
+    right: 575px;
+    cursor: pointer;
+}
+
+.kertas {
+    position: absolute;
+    background-size: 1px;
+    top: 421px;
+    right: 584px;
+    cursor: pointer;
+}
+
+.kertas:hover {
+    transform: scale(1.1);
+}
+
+.foto {
+    position: absolute;
+    top: 445px;
+    left: 594px;
+    cursor: pointer;
+}
+
+.foto:hover {
+    transform: scale(1.1);
+}
+
+.gulungan {
+    position: absolute;
+    top: 520px;
+    right: 580px;
+    cursor: pointer;
+}
+
+.gulungan:hover {
+    transform: scale(1.1);
+}
+
+.books {
+    position: absolute;
+    top: 575px;
+    left: 590px;
+    cursor: pointer;
+}
+
+.books:hover {
+    transform: scale(1.1);
+}
+
+.course {
+    position: absolute;
+    top: 585px;
+    right: 602px;
+    cursor: pointer;
+}
+
+.course:hover {
+    transform: scale(1.1);
+}
+
+.laptop {
+    position: absolute;
+    top: 445px;
+    right: 710px;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;    
+}
+
+.laptop:hover {
+    box-shadow: 0 0 50px 15px #48abe0;
+}
+
+.bulat {
+    position: absolute;
+    top: 325px;
+    right: 717px;
+    cursor: pointer;    
+}
+
+.bulat:hover {
+    transform: scale(1.1);
+}
+
+.bulat1 {
+    position: absolute;
+    top: 303px;
+    right: 739px;
+    cursor: pointer;    
+}
+
+.bulat1:hover {
+    transform: scale(1.2);
+}
+
+.bulat2 {
+    position: absolute;
+    top: 296px;
+    right: 884px;
+    cursor: pointer;    
+}
+
+.bulat2:hover {
+    transform: scale(1.2);
+}
+
+.skill1 {
+    position: absolute;
+    top: 304px;
+    right: 702px;
+    cursor: pointer;  
+}
+
+.skill1:hover {
+    transform: scale(1.1);
+}
+
+.skills {
+    position: absolute;
+    top: 374px;
+    right: 769px;
+    cursor: pointer;    
+}
+
+.skills:hover {
+    transform: scale(1.2);
+}
+
+.projecthistombol {
+    position: absolute;
+    top: 374px;
+    right: 630px;
+    cursor: pointer; 
+}
+
+.projecthistombol:hover {
+    transform: scale(1.2);
+}
+
+.projecthistombol1 {
+    position: absolute;
+    top: 304px;
+    right: 693px;
+    cursor: pointer;
+}
+
+.projecthistombol1:hover {
+    transform: scale(1.1);
+}
+
+.carrertombol {
+    position: absolute;
+    top: 431px;
+    right: 701px;
+    cursor: pointer; 
+}
+
+.carrertombol:hover {
+    transform: scale(1.2);
+}
+
+.carrertombol1 {
+    position: absolute;
+    top: 304px;
+    right: 699px;
+    cursor: pointer;
+}
+
+.carrertombol1:hover {
+    transform: scale(1.1);
+}
+
+.next {
+    position: absolute;
+    top: 389px;
+    right: 598px;
+    cursor: pointer;    
+}
+
+.next:hover {
+    transform: scale(1.2);
+}
+
+
+.previous {
+    position: absolute;
+    top: 389px;
+    right: 890px;
+    cursor: pointer;    
+}
+
+.previous:hover {
+    transform: scale(1.2);
+}
+
+.exit {
+    position: absolute;
+    top: 240px;
+    right: 570px;
+    cursor: pointer;    
+}
+
+.exit:hover {
+    transform: scale(1.2);
+}
+
+
+.image-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    box-shadow: 0 0 10px
+        rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container.show {
+    opacity: 1;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Styling for the image */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+}
+
+
